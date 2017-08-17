@@ -10,6 +10,7 @@
   <title>Working with Visual Studio</title>
 </head>
 <body>
+  <h3>Products</h3>
   <table>
     <thead>
       <tr>
@@ -21,7 +22,7 @@
       @foreach (var p in Model) {
         <tr>
           <td>@p.Name</td>
-          <td>@p.Price</td>
+          <td>@($"{p.Price:C2}")</td>
         </tr>
       }      
     </tbody>    
