@@ -21,6 +21,7 @@ namespace WorkingWithVS2017
     {
       app.UseDeveloperExceptionPage();
       app.UseBrowserLink();
+      app.UseStaticFiles();
       app.UseMvcWithDefaultRoute();
     }
   }
